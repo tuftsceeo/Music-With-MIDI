@@ -1,0 +1,190 @@
+h1 {
+    width: fit-content;
+    margin: 25px 0 40px 20px;
+    text-align: center;
+    font-size: 50px;
+    font: bold;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #2980b9;
+    overflow: hidden;
+    text-decoration: underline dotted;
+}
+h2 {
+    width: fit-content;
+    margin: 25px 0 40px 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #2980b9;
+    overflow: hidden;
+    text-decoration: underline dotted;
+}
+h3 {
+    width: fit-content;
+    margin: 25px 0 40px 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #2980b9;
+    overflow: hidden;
+    text-decoration: underline dotted;
+}
+input {
+    width:50%;
+}
+label {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #2980b9;
+    font-size: 1.5em
+}
+h4 {
+    width: fit-content;
+    margin: 25px 0 40px 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #2980b9;
+    overflow: hidden;
+    text-decoration: underline dotted;
+}
+h5 {
+    width: fit-content;
+    margin: 25px 0 40px 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #2980b9;
+    overflow: hidden;
+    text-decoration: underline dotted;
+}
+button {
+    border: 4px solid blue;
+    border-radius: 5px;
+    padding: 1px 2px;
+    width: fit-content;
+    margin: 15px 0 40px 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: tan;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+#train{
+    background: linear-gradient(135d, #764ba2 0%, #667eea 100%);
+}
+#train:hover {
+    background: linear-gradient(135d, #667eea 0% , #764ba2 100%);
+    transform: scale(1.15)
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    '''background-color: gray;''''
+    border: 3px solid black;         /* 🔴 This is the border */
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    '''background: #ccc;'''
+    border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: blue;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 8px;
+  background: #ccc;
+  border-radius: 4px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background: blue;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.half-border_left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 55vw;
+    height: 100vh;
+    border: 5px solid blue;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, lightblue 0%, white 100%);
+    overflow: scroll;
+}
+.half-border_right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width:45vw;
+    height: 100vh;
+    border: 5px solid blue;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, lightblue 0%, white 100%);
+    overflow: scroll;
+}
+.border-content {
+    text-align: center;
+    background: linear-gradient(to bottom, gray 0%, lightgray 100%);
+    background-color: gray;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.left-border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 55vw;      /* 55 % of viewport width */
+    height: 100vh;    /* full viewport height */
+    border-right: 4px solid black;     /* visible “border” edge */
+    background: lightgray;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;  /* push staves to the bottom */
+    padding-bottom: 20px;   /* space above bottom edge */
+}
+
+thead {
+  background-color: #ddd;
+}
+
+.mpy-editor-box{
+            border: 2.5Spx solid #3498db;
+            background: linear-gradient(135deg, lightgray 0%, white 100%);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            font-weight: bold;
+            color: #2980b9;
+}
+
+body{
+     background: linear-gradient(to bottom, lightblue 0%, white 100%);
+}
