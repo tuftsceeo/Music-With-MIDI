@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Talking to a hub</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+    <link rel="stylesheet" href="music.css"/>
+</head>
+<body>
+    <script type="mpy-editor" src="./main.py" config="./pyscript.toml" env='me35' setup></script>
+
+<h2>🎼 KNN Musical Staves Classifier</h2>
+
+<!-- Channel Status Area -->
+<div id="all_things_channels">
+    <span class="status-indicator status-disconnected"></span>
+    Initializing channel connection...
+</div>
+
+<!-- Musical Staves -->
+<div class="staff-container">
+    <h3 style="text-align: center; margin-bottom: 20px; color: #2c3e50;">Musical Notation</h3>
+    
+    <!-- Treble Clef Staff -->
+    <div class="staff" id="treble-staff">
+        <div class="staff-label">TREBLE</div>
+        <div class="clef treble-clef"></div>
+        <div class="time-signature">4<br>4</div>
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="note-layer" id="note-plot-treble"></div>
+    </div>
+
+    <!-- Bass Clef Staff -->
+    <div class="staff" id="bass-staff">
+        <div class="staff-label">BASS</div>
+        <div class="clef bass-clef"></div>
+        <div class="time-signature">4<br>4</div>
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="note-layer" id="note-plot-bass"></div>
+    </div>
+</div>
+
+<!-- KNN Classification Table -->
+<table id="knn-table">
+    <thead>
+        <tr>
+            <th>🎵 Pitch</th>
+            <th>📶 Sensor 1</th>
+            <th>📶 Sensor 2</th>
+            <th>🎼 Staff</th>
+            <th>🎺 Instrument</th>
+        </tr>
+    </thead>
+    <tbody id="knn-body">
+        <!-- Sample data for demonstration -->
+        <tr>
+            <td>C4</td>
+            <td>0</td>
+            <td>0</td>
+            <td>Treble</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+</body>
+</html>
